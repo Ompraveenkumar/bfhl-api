@@ -1,0 +1,9 @@
+{
+  "name": "bfhl-frontend",
+  "version": "1.0.0",
+  "build": {
+    "env": {
+      "VITE_API_URL": "https://ompraveenkumar-bfhl.herokuapp.com"
+    }
+  }
+}
