@@ -3,7 +3,7 @@ import "./index.css";
 import { TreeVisualizer } from "./TreeVisualizer";
 
 // ─── Config ────────────────────────────────────────────────────────────────
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+const API_URL = import.meta.env.VITE_API_URL;
 
 // ─── Example test sets ───────────────────────────────────────────────────────
 const EXAMPLES = [
