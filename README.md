@@ -6,7 +6,7 @@ A full-stack application built to process hierarchical node relationships, detec
 - **Backend**: Node.js + Express
   - Features: Multi-parent resolution (first-wins), cycle detection via DFS, graph mapping, and tree construction.
 - **Frontend**: React + Vite
-  - Features: Glassmorphic dark UI, animated node trees, instant JSON visualization, examples switchboard.
+  - Features: Retro Cyberpunk Terminal UI, ASCII block data modeling, instant JSON visualization, and interactive quick-example switchboards.
 
 ---
 
@@ -35,9 +35,11 @@ npm run dev
 
 ---
 
-## ☁️ Deployment Instructions
+## ☁️ Deployments
 
-### Deploying the Backend (to Render/Railway)
+This project has been fully deployed natively to **Render** (Backend API) and **Vercel** (Frontend React Application).
+
+### Deploying the Backend (to Render)
 1. Push the repository to GitHub.
 2. Sign in to your preferred hosting provider (e.g., Render, Railway).
 3. Create a **New Web Service**.
@@ -47,15 +49,15 @@ npm run dev
 7. Ensure PORT environment variable is automatically assigned or set to 5000.
 8. Once deployed, note down the deployed API URL.
 
-### Deploying the Frontend (to Vercel/Netlify)
-1. On Vercel/Netlify, create a new site and connect your GitHub repository.
+### Deploying the Frontend (to Vercel)
+1. On Vercel, create a new site and connect your GitHub repository.
 2. Set the **Root Directory** to `frontend`.
 3. **Build Command**: `npm run build`
 4. **Publish Directory**: `dist`
-5. **Environment Variables**: Add `VITE_API_URL` and set its value to your newly deployed backend server URL (e.g., `https://ompraveenkumar-bfhl.herokuapp.com`).
+5. **Environment Variables**: Add `VITE_API_URL` and set its value to your Render backend API URL (e.g., `https://ompraveenkumar-bfhl.onrender.com`).
 6. Deploy the site.
 
-*(Note: Provide the `netlify.toml` file in the frontend folder automatically takes care of the configuration if using Netlify).*
+*(Note: The frontend architecture natively binds this URL explicitly via `import.meta.env.VITE_API_URL` inside `App.jsx` avoiding static hardcoding of routes).*
 
 ---
 
